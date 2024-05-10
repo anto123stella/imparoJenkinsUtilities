@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 
 
 def file(String fileName) {
-    def newFile = new File("C:/Users/antonio.agostino/OneDrive - Accenture/Documents/test/${fileName}.txt")
+    def newFile = new File("C:/Work File/${fileName}.txt")
     newFile.createNewFile()  
 }
 
