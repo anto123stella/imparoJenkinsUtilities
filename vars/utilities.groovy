@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 
 def file(String fileName) {
     def newFile = new File("C:/Users/antonio.agostino/OneDrive - Accenture/Documents/test/${fileName}.txt")
-    newFile.createNewFile() 
+    newFile.createNewFile()  
 }
 
 def writeFile(String fileName, String toWrite) {
