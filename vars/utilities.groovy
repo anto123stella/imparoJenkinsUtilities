@@ -6,5 +6,6 @@ import java.io.FileNotFoundException;
 def file(String testo) {
     def newFile = new File("C:/Work File/bro.txt")
     newFile.createNewFile()
-    newFile.append(testo)  
+    newFile.append(testo) 
+    echo('file scaricato') 
 }
