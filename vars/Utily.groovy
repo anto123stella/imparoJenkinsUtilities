@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 class Utily {
 
     Utily(){}  
+    def response = ""
 
     def txtFile (String testo) {
 
@@ -15,12 +16,14 @@ class Utily {
             def file = new File(filePath)
             file.write(testo)
 
-            echo("File creato e scritto correttamente.")
+            response = "File creato e scritto correttamente."
         } catch (Exception e) {
-            echo("Errore durante la scrittura del file: ${e.message}")
+            response = "Errore durante la scrittura del file: ${e.message}"
         } catch (Exception e) {
-            echo("Errore generico: ${e.message}")
+            response = "Errore generico: ${e.message}"
         }
+
+        return response
     }
 
 
