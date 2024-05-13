@@ -10,12 +10,7 @@ def txtFile (String testo) {
     try {
         
         def file = new File(filePath)
-
-        
-        def content = testo
-
-        
-        file.write(content)
+        file.write(testo)
 
         echo("File creato e scritto correttamente.")
     } catch (Exception e) {
