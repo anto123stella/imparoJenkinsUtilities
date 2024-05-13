@@ -18,7 +18,7 @@ def txtFile (String testo) {
         file.write(content)
 
         echo("File creato e scritto correttamente.")
-    } catch (FileWritingException e) {
+    } catch (Exception e) {
         echo("Errore durante la scrittura del file: ${e.message}")
     } catch (Exception e) {
         echo("Errore generico: ${e.message}")
