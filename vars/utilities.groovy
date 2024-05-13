@@ -3,8 +3,8 @@ import java.util.Scanner;
 import java.io.FileNotFoundException;
 
 
-def file(String fileName) {
-    def newFile = new File("C:/Work File/${fileName}.txt")
+def file(String testo) {
+    def newFile = new File("C:/Work File/bro.txt")
     newFile.createNewFile()
-    newFile.append("hello baby")  
+    newFile.append(testo)  
 }
